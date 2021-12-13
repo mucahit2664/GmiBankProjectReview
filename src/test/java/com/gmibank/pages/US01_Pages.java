@@ -13,7 +13,7 @@ public class US01_Pages {
     }
 
 
-@FindBy(id= "account-menu")
+    @FindBy(id= "account-menu")
     public WebElement humanHead;
 
     @FindBy(xpath = "(//a[@class='dropdown-item'])[2]")

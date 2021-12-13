@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
                 "pretty"
         },
         features = "src/test/resources/features",
-        glue = "stepDefinitions",
+        glue = "com/gmibank/stepdefinitions",
         dryRun = false,
-        tags= "@progression"
+        tags= " @US01TC10"
 )
 
 
