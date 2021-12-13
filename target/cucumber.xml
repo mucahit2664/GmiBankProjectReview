@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="38.013">
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="System should allow any user to register with valid credentials validating the success message" time="21.672">
+        <failure message="expected:&lt;[Registration saved! Please check your email for confirmation.]&#10;✖︎&gt; but was:&lt;[translation-not-found[error.ssnexists]]&#10;✖︎&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "456-36-6632" with valid credential.......................passed
+And Enter the name "Hasan" with valid credential............................passed
+And Enter the last name "Kara" with valid credential........................passed
+And Enter the Address.......................................................passed
+And Enter the GSM "560-899-8296" with valid credential......................passed
+And Enter the valid username "gmibankeuser04" with valid credentail.........passed
+And Enter the e-mail "gmibankeuser04@gmail.com" with valid credential.......passed
+And Enter the new "234@!Abc+=" with valid credential........................passed
+And Enter the same password with valid credential "234@!Abc+="..............passed
+And Click to Register button................................................passed
+Then There should be Succes message.........................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Registration saved! Please check your email for confirmation.]
+✖︎> but was:<[translation-not-found[error.ssnexists]]
+✖︎>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.gmibank.stepdefinitions.US01_StepDefts.there_should_be_Succes_message(US01_StepDefts.java:104)
+	at ✽.There should be Succes message.(file:///C:/Users/BEST%20TECH/IdeaProjects/GmiBankProjectReview/src/test/resources/features/US_01.feature:21)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="System should allow any user to register with valid credentials validating the success message 2" time="8.153">
+        <failure message="expected:&lt;[Registration saved! Please check your email for confirmation.]&#10;✖︎&gt; but was:&lt;[translation-not-found[error.ssnexists]]&#10;✖︎&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "456-36-6631" with valid credential.......................passed
+And Enter the name "Abdullah" with valid credential.........................passed
+And Enter the last name "Kara" with valid credential........................passed
+And Enter the Address.......................................................passed
+And Enter the GSM "561-899-8297" with valid credential......................passed
+And Enter the valid username "gmibankwuser05" with valid credentail.........passed
+And Enter the e-mail "gmibank5user05@gmail.com" with valid credential.......passed
+And Enter the new "234@!Abc+#" with valid credential........................passed
+And Enter the same password with valid credential "234@!Abc+#"..............passed
+And Click to Register button................................................passed
+Then There should be Succes message.........................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Registration saved! Please check your email for confirmation.]
+✖︎> but was:<[translation-not-found[error.ssnexists]]
+✖︎>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.gmibank.stepdefinitions.US01_StepDefts.there_should_be_Succes_message(US01_StepDefts.java:104)
+	at ✽.There should be Succes message.(file:///C:/Users/BEST%20TECH/IdeaProjects/GmiBankProjectReview/src/test/resources/features/US_01.feature:21)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="System should allow any user to register with valid credentials validating the success message" name="System should allow any user to register with valid credentials validating the success message 3" time="7.765">
+        <failure message="expected:&lt;[Registration saved! Please check your email for confirmation.]&#10;✖︎&gt; but was:&lt;[translation-not-found[error.ssnexists]]&#10;✖︎&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given Go to gmibank.com home page us01......................................passed
+And Click to User Account menu and Click to Register........................passed
+And Enter the SSN "456-37-6633" with valid credential.......................passed
+And Enter the name "Ayhan" with valid credential............................passed
+And Enter the last name "Kara" with valid credential........................passed
+And Enter the Address.......................................................passed
+And Enter the GSM "563-899-8298" with valid credential......................passed
+And Enter the valid username "gmibankouser06" with valid credentail.........passed
+And Enter the e-mail "gmibank6user06@gmail.com" with valid credential.......passed
+And Enter the new "234@!Abc+$" with valid credential........................passed
+And Enter the same password with valid credential "234@!Abc+$"..............passed
+And Click to Register button................................................passed
+Then There should be Succes message.........................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Registration saved! Please check your email for confirmation.]
+✖︎> but was:<[translation-not-found[error.ssnexists]]
+✖︎>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.gmibank.stepdefinitions.US01_StepDefts.there_should_be_Succes_message(US01_StepDefts.java:104)
+	at ✽.There should be Succes message.(file:///C:/Users/BEST%20TECH/IdeaProjects/GmiBankProjectReview/src/test/resources/features/US_01.feature:21)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
