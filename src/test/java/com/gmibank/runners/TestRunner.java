@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/failed.txt",
                 "pretty"
         },
-        features = "src/test/resources/features",
+        features = "src.test.resources.features",
         glue = "stepDefinitions",
         dryRun = false,
         tags= "@progression"
