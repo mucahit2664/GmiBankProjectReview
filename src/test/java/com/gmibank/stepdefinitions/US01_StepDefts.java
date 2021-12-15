@@ -1,6 +1,6 @@
 package com.gmibank.stepdefinitions;
 
-import com.gmibank.pages.US01_Pages;
+import com.gmibank.pages.RegistrationPage;
 import com.gmibank.utilities.CommonMethods;
 import com.gmibank.utilities.ConfigurationReader;
 import com.gmibank.utilities.Driver;
@@ -9,11 +9,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 
 public class US01_StepDefts {
 
-    US01_Pages us01=new US01_Pages();
+   RegistrationPage us01=new RegistrationPage();
 
 
 
@@ -61,7 +60,7 @@ us01.lastNameTextBox.sendKeys(string+Keys.ENTER);
     public void enter_the_Address() {
 
         us01.adressTextBox.sendKeys(ConfigurationReader.getProperty("user_address"));
-=======
+
 us01.adressTextBox.sendKeys(ConfigurationReader.getProperty("user_address"));
 
     }
