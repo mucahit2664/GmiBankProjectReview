@@ -13,10 +13,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failed.txt",
                 "pretty"
         },
-        features = "src.test.resources.features",
-        glue = "stepDefinitions",
+        features = "src/test/resources/features",
+        glue = "com/gmibank/stepDefinitions",
         dryRun = false,
-        tags= " @US01TC10"
+        tags= "@progress"
 )
 
 
