@@ -27,7 +27,8 @@ public class US01_StepDefts {
 
     @Given("Click to User Account menu and Click to Register")
     public void click_to_User_Account_menu_and_Click_to_Register() {
-
+        us01.humanHead.click();
+        us01.registerButonu.click();
     }
 
 
@@ -44,7 +45,7 @@ public class US01_StepDefts {
 
         us01.firstNameTextBox.sendKeys(string+Keys.ENTER);
 
-us01.firstNameTextBox.sendKeys(string+Keys.ENTER);
+        us01.firstNameTextBox.sendKeys(string+Keys.ENTER);
 
     }
 
@@ -61,7 +62,6 @@ us01.lastNameTextBox.sendKeys(string+Keys.ENTER);
     public void enter_the_Address() {
 
         us01.adressTextBox.sendKeys(ConfigurationReader.getProperty("user_address"));
-=======
 us01.adressTextBox.sendKeys(ConfigurationReader.getProperty("user_address"));
 
     }

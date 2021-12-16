@@ -49,7 +49,7 @@ public class US01_Pages {
     @FindBy (id = "register-submit")
     public WebElement registerButton;
 
-    @FindBy(xpath = "//div[@style='pointer-events: none;']")
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
     public WebElement savedMessage;
 
 

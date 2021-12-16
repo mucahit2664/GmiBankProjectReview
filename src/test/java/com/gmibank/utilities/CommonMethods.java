@@ -217,7 +217,7 @@ public class CommonMethods {
      * This method will clear the text box and enter the text
      */
     public static void sendText(WebElement element, String value) {
-        element.clear();
+        element.click();
         element.sendKeys(value);
     }
     /**

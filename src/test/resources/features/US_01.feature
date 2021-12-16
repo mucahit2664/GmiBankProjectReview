@@ -21,6 +21,6 @@ Feature:  System should allow any user to register with valid credentials valida
     Then There should be Succes message.
     Examples:
       | SSN Number  | First Name | Last Name | Mobile Phone Number | username      | email                   | password   |
-      | 456-36-6632 | Hasan      | Kara      | 560-899-8296        | gmibankeuser04 | gmibankeuser04@gmail.com | 234@!Abc+= |
-      | 456-36-6631 | Abdullah   | Kara      | 561-899-8297        | gmibankwuser05 | gmibank5user05@gmail.com | 234@!Abc+# |
-      | 456-37-6633 | Ayhan      | Kara      | 563-899-8298        | gmibankouser06 | gmibank6user06@gmail.com | 234@!Abc+$ |
+      | 456-86-6632 | Hasan      | Kara      | 560-899-8296        | gmibankeuser54 | gmibankeuser54@gmail.com | 234@!Abc+= |
+      #| 456-36-6631 | Abdullah   | Kara      | 561-899-8297        | gmibankwuser05 | gmibank5user05@gmail.com | 234@!Abc+# |
+      #| 456-37-6633 | Ayhan      | Kara      | 563-899-8298        | gmibankouser06 | gmibank6user06@gmail.com | 234@!Abc+$ |
