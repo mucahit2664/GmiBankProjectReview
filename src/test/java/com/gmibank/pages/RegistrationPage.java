@@ -54,7 +54,7 @@ public class RegistrationPage {
     public WebElement savedMessage;
 
     public WebElement getInvalidFeedback(String message) {
-        return Driver.getDriver().findElement(By.xpath("//div[text()='" + message + "']"));
+        return Driver.getDriver().findElement(By.xpath("//div[text()='"+ message +"']"));
     }
 
 

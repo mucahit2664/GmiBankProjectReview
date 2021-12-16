@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="32.088">
-    <testcase classname="register with invalid credentials" name="ssn, mobile number, email fileds should not except invalid data" time="18.347">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.1">
+    <testcase classname="register with invalid credentials" name="ssn, mobile number, email fileds should not except invalid data" time="21.075">
         <system-out>
             <![CDATA[Given Go to gmibank.com home page...........................................passed
 And click on login module...................................................passed
@@ -11,7 +11,7 @@ Then user displays invalid feedback messages................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="register with invalid credentials" name="ssn, mobile number, email fileds should not except invalid data 2" time="13.41">
+    <testcase classname="register with invalid credentials" name="ssn, mobile number, email fileds should not except invalid data 2" time="16.547">
         <system-out>
             <![CDATA[Given Go to gmibank.com home page...........................................passed
 And click on login module...................................................passed
