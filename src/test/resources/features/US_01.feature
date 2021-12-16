@@ -2,8 +2,9 @@
 Feature:  System should allow any user to register with valid credentials validating the success message
 
   Background:
-    Given Go to gmibank.com home page us01
-    And Click to User Account menu and Click to Register
+    Given Go to gmibank.com home page
+    And click on login module
+    And click on register button
 
   @US01TC10
   Scenario Outline:  System should allow any user to register with valid credentials validating the success message

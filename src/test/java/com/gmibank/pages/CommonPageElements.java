@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CommonPageElements {
-
-
     public CommonPageElements() {
         PageFactory.initElements(Driver.getDriver(), this);
     }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RegistrationPage {
 
+
     public RegistrationPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -34,7 +35,7 @@ public class RegistrationPage {
     @FindBy (xpath = "//input[@id='mobilephone']")
     public WebElement phoneNumberTextBox;
 
-    @FindBy(xpath = " //input[@id='username']")
+    @FindBy (xpath = " //input[@id='username']")
     public WebElement usernameTextBox;
 
     @FindBy (xpath = "//input[@id='email']")
@@ -53,6 +54,8 @@ public class RegistrationPage {
     public WebElement savedMessage;
 
     public WebElement getInvalidFeedback(String message) {
-        return Driver.getDriver().findElement(By.xpath("//div[text()='" + message + "']"));
+        return Driver.getDriver().findElement(By.xpath("//div[text()='"+ message +"']"));
     }
+
+
 }

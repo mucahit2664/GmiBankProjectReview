@@ -1,4 +1,4 @@
-package com.gmibank.stepdefinitions;
+package com.gmibank.stepDefinitions;
 
 import com.gmibank.pages.CommonPageElements;
 import com.gmibank.pages.RegistrationPage;
@@ -9,15 +9,13 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class US02_InvalidStepdefts {
-
+public class US_02_invalidRegistrationSteps {
 
     CommonPageElements common = new CommonPageElements();
     RegistrationPage registrant = new RegistrationPage();
 
     @Given("click on login module")
     public void click_on_login_module() {
-        CommonMethods.waitFor(1);
         common.loginModule.click();
     }
 
@@ -34,7 +32,7 @@ public class US02_InvalidStepdefts {
     @Then("user displays invalid feedback messages")
     public void user_displays_invalid_feedback_messages(List<String> messages) {
         for (int i = 0; i < messages.size(); i++) {
-            Assert.assertTrue(registrant.getInvalidFeedback(messages.get(i)).isDisplayed());
+          Assert.assertTrue(registrant.getInvalidFeedback(messages.get(i)).isDisplayed());
             System.out.println(registrant.getInvalidFeedback(messages.get(i)).getText());
         }
     }
@@ -46,5 +44,4 @@ public class US02_InvalidStepdefts {
         CommonMethods.sendText(registrant.emailTextBox, eMail);
         CommonMethods.waitFor(3);
     }
-
 }
