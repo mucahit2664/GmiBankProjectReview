@@ -5,7 +5,6 @@ Feature:  System should allow any user to register with valid credentials valida
     Given Go to gmibank.com home page us01
     And Click to User Account menu and Click to Register
 
-
   @US01TC10
   Scenario Outline:  System should allow any user to register with valid credentials validating the success message
     And Enter the SSN "<SSN Number>" with valid credential

@@ -1,6 +1,7 @@
 package com.gmibank.stepdefinitions;
 
-import com.gmibank.pages.US01_Pages;
+import com.gmibank.pages.RegistrationPage;
+import com.gmibank.pages.RegistrationPage;
 import com.gmibank.utilities.CommonMethods;
 import com.gmibank.utilities.ConfigurationReader;
 import io.cucumber.java.en.And;
@@ -11,7 +12,7 @@ import org.openqa.selenium.Keys;
 
 public class US01_StepDefinition {
 
-    US01_Pages us01=new US01_Pages();
+    RegistrationPage us01=new RegistrationPage();
 
 
 
@@ -32,27 +33,27 @@ public class US01_StepDefinition {
     @Then("enter the boxes with valid credential {string},{string},{string},{string},{string},{string},{string}")
     public void enter_the_boxes_with_valid_credential(String string1, String string2, String string3, String string4, String string5, String string6, String string7) {
 
-        CommonMethods.sendText(us01.ssnTextBox,string1);
-        CommonMethods.sendText(us01.firstNameTextBox,string2);
-        CommonMethods.sendText(us01.lastNameTextBox,string3);
-        us01.adressTextBox.sendKeys(ConfigurationReader.getProperty("user_address"));
-        CommonMethods.sendText(us01.phoneNumberTextBox,string4);
-        CommonMethods.sendText(us01.usernameTextBox,string5);
-        CommonMethods.sendText(us01.emailTextBox,string6);
-        CommonMethods.sendText(us01.firstPasswordTextBox,string7);
-        CommonMethods.sendText(us01.secondPasswordTextBox,string7);
-        us01.registerButton.click();
+//        CommonMethods.sendText(us01.ssnTextBox,string1);
+//        CommonMethods.sendText(us01.firstNameTextBox,string2);
+//        CommonMethods.sendText(us01.lastNameTextBox,string3);
+//        us01.adressTextBox.sendKeys(ConfigurationReader.getProperty("user_address"));
+//        CommonMethods.sendText(us01.phoneNumberTextBox,string4);
+//        CommonMethods.sendText(us01.usernameTextBox,string5);
+//        CommonMethods.sendText(us01.emailTextBox,string6);
+//        CommonMethods.sendText(us01.firstPasswordTextBox,string7);
+//        CommonMethods.sendText(us01.secondPasswordTextBox,string7);
+//        us01.registerButton.click();
 
     }
 
     @Then("There should be succes message.")
     public void thereShouldBeSuccesMessage() throws InterruptedException {
-       Thread.sleep(5000);
-        String actualMessage=us01.savedMessage.getText();
-        System.out.println("actual message: "+actualMessage);
-        String expectedMessage="Registration saved! Please check your email for confirmation.\n" +
-                "✖︎";
-        Assert.assertEquals(expectedMessage,actualMessage);
+//       Thread.sleep(5000);
+//        String actualMessage=us01.savedMessage.getText();
+//        System.out.println("actual message: "+actualMessage);
+//        String expectedMessage="Registration saved! Please check your email for confirmation.\n" +
+//                "✖︎";
+//        Assert.assertEquals(expectedMessage,actualMessage);
     }
 
 //    @Then("And Click to Register button")
