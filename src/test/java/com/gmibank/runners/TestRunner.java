@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/gmibank/stepDefinitions",
-        dryRun = false,
-        tags= "@progress"
+        dryRun = true
+      //  tags= "@progress"
 )
 
 
