@@ -32,14 +32,14 @@ public class US_02_invalidRegistrationSteps {
     @Then("user displays invalid feedback messages")
     public void user_displays_invalid_feedback_messages(List<String> messages) {
         for (int i = 0; i < messages.size(); i++) {
-          Assert.assertTrue(registrant.getInvalidFeedback(messages.get(i)).isDisplayed());
+            Assert.assertTrue(registrant.getInvalidFeedback(messages.get(i)).isDisplayed());
             System.out.println(registrant.getInvalidFeedback(messages.get(i)).getText());
         }
     }
 
     @Given("User provides invalid data to corresponding fields {string}, {string}, {string}")
     public void user_provides_invalid_data_to_corresponding_fields(String ssn, String mobilePhoneNumber, String eMail) {
-        CommonMethods.sendText(registrant.ssnTextBox, ssn );
+        CommonMethods.sendText(registrant.ssnTextBox, ssn);
         CommonMethods.sendText(registrant.phoneNumberTextBox, mobilePhoneNumber);
         CommonMethods.sendText(registrant.emailTextBox, eMail);
         CommonMethods.waitFor(3);
