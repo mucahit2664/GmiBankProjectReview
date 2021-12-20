@@ -1,5 +1,1303 @@
 [
   {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1137000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 768000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 525000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.222Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1410000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "System should allow any user to register with valid credentials validating the success message",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 65000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1708000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Enter the SSN \"456-36-6632\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"456-36-6632\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 667000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Enter the name \"Hasan\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hasan\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Enter the last name \"Kara\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kara\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_last_name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 439000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Enter the Address",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 669000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Enter the GSM \"560-899-8296\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"560-899-8296\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_GSM_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 759000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Enter the valid username \"gmibankeuser04\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibankeuser04\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_valid_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 658000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Enter the e-mail \"gmibankeuser04@gmail.com\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibankeuser04@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_e_mail_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 676000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Enter the new \"234@!Abc+\u003d\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"234@!Abc+\u003d\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_new_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 882000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter the same password with valid credential \"234@!Abc+\u003d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"234@!Abc+\u003d\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enterTheSamePasswordWithValidCredential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 640000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Click to Register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.click_to_Register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 672000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "There should be Succes message.",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.there_should_be_Succes_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC10"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 630000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 698000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 686000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.432Z",
+        "before": [
+          {
+            "result": {
+              "duration": 37000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "System should allow any user to register with valid credentials validating the success message",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 52000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2092000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Enter the SSN \"456-36-6631\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"456-36-6631\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1184000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Enter the name \"Abdullah\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abdullah\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1655000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Enter the last name \"Kara\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kara\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_last_name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 658000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Enter the Address",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 663000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Enter the GSM \"561-899-8297\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"561-899-8297\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_GSM_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 621000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Enter the valid username \"gmibankwuser05\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibankwuser05\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_valid_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1026000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Enter the e-mail \"gmibank5user05@gmail.com\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibank5user05@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_e_mail_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1121000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Enter the new \"234@!Abc+#\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"234@!Abc+#\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_new_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 758000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter the same password with valid credential \"234@!Abc+#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"234@!Abc+#\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enterTheSamePasswordWithValidCredential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Click to Register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.click_to_Register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 589000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "There should be Succes message.",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.there_should_be_Succes_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC10"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 654000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1214000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1721000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.470Z",
+        "before": [
+          {
+            "result": {
+              "duration": 63000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "System should allow any user to register with valid credentials validating the success message",
+        "description": "",
+        "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 28000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1793000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Enter the SSN \"456-37-6633\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"456-37-6633\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_SSN_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 687000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Enter the name \"Ayhan\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ayhan\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1368000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Enter the last name \"Kara\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kara\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_last_name_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1249000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Enter the Address",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_Address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 764000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Enter the GSM \"563-899-8298\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"563-899-8298\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_GSM_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 851000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Enter the valid username \"gmibankouser06\" with valid credentail",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibankouser06\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_valid_username_with_valid_credentail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 840000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Enter the e-mail \"gmibank6user06@gmail.com\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibank6user06@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_e_mail_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 710000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "Enter the new \"234@!Abc+$\" with valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"234@!Abc+$\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enter_the_new_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 612000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "Enter the same password with valid credential \"234@!Abc+$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"234@!Abc+$\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.enterTheSamePasswordWithValidCredential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 595000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Click to Register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.click_to_Register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 635000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "There should be Succes message.",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.there_should_be_Succes_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@US01TC10"
+          }
+        ]
+      }
+    ],
+    "name": "System should allow any user to register with valid credentials validating the success message",
+    "description": "",
+    "id": "system-should-allow-any-user-to-register-with-valid-credentials-validating-the-success-message",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_01.feature",
+    "tags": [
+      {
+        "name": "@US01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7607000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3636000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2389000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.529Z",
+        "before": [
+          {
+            "result": {
+              "duration": 38000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "register-with-invalid-credentials;any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 60000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5226000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user clicks on register button at Registration page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_clicks_on_register_button_at_Registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8612000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user displays invalid feedback messages",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_displays_invalid_feedback_messages(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Please enter your social security number."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your first name."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your last name."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your address."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your mobile phone number."
+                ]
+              },
+              {
+                "cells": [
+                  "Your username is required."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your email."
+                ]
+              },
+              {
+                "cells": [
+                  "Your password is required."
+                ]
+              },
+              {
+                "cells": [
+                  "Your confirmation password is required."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1042000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 613000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 605000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.708Z",
+        "before": [
+          {
+            "result": {
+              "duration": 54000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "ssn, mobile number, email fileds should not except invalid data",
+        "description": "",
+        "id": "register-with-invalid-credentials;ssn--mobile-number--email-fileds-should-not-except-invalid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 31000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12933000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User provides invalid data to corresponding fields \"123-000?567\", \"123 456 788o\", \"test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-000?567\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"123 456 788o\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"test.com\"",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_provides_invalid_data_to_corresponding_fields(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 669000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user clicks on register button at Registration page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_clicks_on_register_button_at_Registration_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2351000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "user displays invalid feedback messages",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_displays_invalid_feedback_messages(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Ssn is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "Your mobile phone number is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "Your email is invalid."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@progress"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1120000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3890000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 668000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.772Z",
+        "before": [
+          {
+            "result": {
+              "duration": 45000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "ssn, mobile number, email fileds should not except invalid data",
+        "description": "",
+        "id": "register-with-invalid-credentials;ssn--mobile-number--email-fileds-should-not-except-invalid-data;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 32000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3203000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User provides invalid data to corresponding fields \"123-000-56a\", \"(126)456788\", \"test@gmail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123-000-56a\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"(126)456788\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"test@gmail\"",
+                  "offset": 81
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_provides_invalid_data_to_corresponding_fields(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 692000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user clicks on register button at Registration page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_clicks_on_register_button_at_Registration_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 943000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "user displays invalid feedback messages",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_displays_invalid_feedback_messages(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Ssn is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "Your mobile phone number is invalid."
+                ]
+              },
+              {
+                "cells": [
+                  "Your email is invalid."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US01"
+          },
+          {
+            "name": "@progress"
+          }
+        ]
+      }
+    ],
+    "name": "register with invalid credentials",
+    "description": "",
+    "id": "register-with-invalid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_02.feature",
+    "tags": [
+      {
+        "name": "@US01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
     "line": 1,
     "elements": [
       {
@@ -11,8 +1309,8 @@
         "steps": [
           {
             "result": {
-              "duration": 7531852000,
-              "status": "passed"
+              "duration": 614000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "Go to gmibank.com home page",
@@ -23,8 +1321,8 @@
           },
           {
             "result": {
-              "duration": 467098000,
-              "status": "passed"
+              "duration": 699000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "click on login module",
@@ -35,8 +1333,8 @@
           },
           {
             "result": {
-              "duration": 343837000,
-              "status": "passed"
+              "duration": 587000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "click on register button",
@@ -48,12 +1346,161 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-15T19:38:39.282Z",
+        "start_timestamp": "2021-12-20T05:09:22.851Z",
         "before": [
           {
             "result": {
-              "duration": 6723630000,
-              "status": "passed"
+              "duration": 34000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "register-with-invalid-credentials;any-field-on-the-registration-page-should-not-be-left-blank",
+        "after": [
+          {
+            "result": {
+              "duration": 43000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2728000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user clicks on register button at Registration page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_clicks_on_register_button_at_Registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9574000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user displays invalid feedback messages",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.user_displays_invalid_feedback_messages(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Please enter your social security number."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your first name."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your last name."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your address."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your mobile phone number."
+                ]
+              },
+              {
+                "cells": [
+                  "Your username is required."
+                ]
+              },
+              {
+                "cells": [
+                  "Please enter your email."
+                ]
+              },
+              {
+                "cells": [
+                  "Your password is required."
+                ]
+              },
+              {
+                "cells": [
+                  "Your confirmation password is required."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 598000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 700000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 583000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.891Z",
+        "before": [
+          {
+            "result": {
+              "duration": 53000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
@@ -67,8 +1514,8 @@
         "after": [
           {
             "result": {
-              "duration": 298461000,
-              "status": "passed"
+              "duration": 22000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
@@ -80,8 +1527,8 @@
         "steps": [
           {
             "result": {
-              "duration": 4176304000,
-              "status": "passed"
+              "duration": 1850000,
+              "status": "skipped"
             },
             "line": 23,
             "name": "User provides invalid data to corresponding fields \"123-000?567\", \"123 456 788o\", \"test.com\"",
@@ -106,8 +1553,8 @@
           },
           {
             "result": {
-              "duration": 192474000,
-              "status": "passed"
+              "duration": 574000,
+              "status": "skipped"
             },
             "line": 24,
             "name": "user clicks on register button at Registration page",
@@ -118,8 +1565,8 @@
           },
           {
             "result": {
-              "duration": 1128666000,
-              "status": "passed"
+              "duration": 1044000,
+              "status": "skipped"
             },
             "line": 25,
             "name": "user displays invalid feedback messages",
@@ -161,8 +1608,8 @@
         "steps": [
           {
             "result": {
-              "duration": 6776343000,
-              "status": "passed"
+              "duration": 695000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "Go to gmibank.com home page",
@@ -173,8 +1620,8 @@
           },
           {
             "result": {
-              "duration": 441046000,
-              "status": "passed"
+              "duration": 921000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "click on login module",
@@ -185,8 +1632,8 @@
           },
           {
             "result": {
-              "duration": 373808000,
-              "status": "passed"
+              "duration": 1208000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "click on register button",
@@ -198,12 +1645,12 @@
         ]
       },
       {
-        "start_timestamp": "2021-12-15T19:39:00.384Z",
+        "start_timestamp": "2021-12-20T05:09:22.917Z",
         "before": [
           {
             "result": {
-              "duration": 3245373000,
-              "status": "passed"
+              "duration": 28000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
@@ -217,8 +1664,8 @@
         "after": [
           {
             "result": {
-              "duration": 305423000,
-              "status": "passed"
+              "duration": 24000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
@@ -230,8 +1677,8 @@
         "steps": [
           {
             "result": {
-              "duration": 4202647000,
-              "status": "passed"
+              "duration": 7702000,
+              "status": "skipped"
             },
             "line": 23,
             "name": "User provides invalid data to corresponding fields \"123-000-56a\", \"(126)456788\", \"test@gmail\"",
@@ -256,8 +1703,8 @@
           },
           {
             "result": {
-              "duration": 164501000,
-              "status": "passed"
+              "duration": 587000,
+              "status": "skipped"
             },
             "line": 24,
             "name": "user clicks on register button at Registration page",
@@ -268,8 +1715,8 @@
           },
           {
             "result": {
-              "duration": 1022519000,
-              "status": "passed"
+              "duration": 1933000,
+              "status": "skipped"
             },
             "line": 25,
             "name": "user displays invalid feedback messages",
@@ -308,6 +1755,662 @@
     "id": "register-with-invalid-credentials",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/US_02_invalidRegistration.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 953000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 468000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 462000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:22.994Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "There should be at least 1 lower case char",
+        "description": "",
+        "id": "restrict-password-usage-at-registration-page;there-should-be-at-least-1-lower-case-char",
+        "after": [
+          {
+            "result": {
+              "duration": 20000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 937000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user clicks on New password field",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_clicks_on_New_password_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 562000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user provides lower case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_lower_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 489000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user displays red color on the strength bar",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_displays_red_color_on_the_strength_bar()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 989000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 538000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 462000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:23.048Z",
+        "before": [
+          {
+            "result": {
+              "duration": 25000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "There should be at least 1 upper case char",
+        "description": "",
+        "id": "restrict-password-usage-at-registration-page;there-should-be-at-least-1-upper-case-char",
+        "after": [
+          {
+            "result": {
+              "duration": 25000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2713000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user clicks on New password field",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_clicks_on_New_password_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1151000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user provides lower case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_lower_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 446000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user provides upper case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_upper_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 494000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user displays orange color on the strength bar",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_displays_orange_color_on_the_strength_bar()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7245000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2096000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 524000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:23.067Z",
+        "before": [
+          {
+            "result": {
+              "duration": 26000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "There should be at least 1 digit char",
+        "description": "",
+        "id": "restrict-password-usage-at-registration-page;there-should-be-at-least-1-digit-char",
+        "after": [
+          {
+            "result": {
+              "duration": 24000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 891000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user clicks on New password field",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_clicks_on_New_password_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 538000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "user provides lower case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_lower_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 509000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user provides upper case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_upper_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 507000,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "user provides digit char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_digit_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1171000,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user displays yellow color on the strength bar",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_displays_yellow_color_on_the_strength_bar()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 874000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 598000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2839000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:23.129Z",
+        "before": [
+          {
+            "result": {
+              "duration": 33000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "There should be at least 1 special case char",
+        "description": "",
+        "id": "restrict-password-usage-at-registration-page;there-should-be-at-least-1-special-case-char",
+        "after": [
+          {
+            "result": {
+              "duration": 23000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 940000,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user clicks on New password field",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_clicks_on_New_password_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1020000,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user provides lower case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_lower_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 915000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "user provides upper case char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_upper_case_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 541000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "user provides digit char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_digit_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 566000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "user provides special char",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_special_char()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 701000,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "user displays green color on the strength bar",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_displays_green_color_on_the_strength_bar()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 652000,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Go to gmibank.com home page",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US01_StepDefts.go_to_gmibank_com_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 509000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "click on login module",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_login_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 569000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "click on register button",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_02_invalidRegistrationSteps.click_on_register_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-20T05:09:23.306Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "There should be at least 7 chars for a stronger password",
+        "description": "",
+        "id": "restrict-password-usage-at-registration-page;there-should-be-at-least-7-chars-for-a-stronger-password",
+        "after": [
+          {
+            "result": {
+              "duration": 17000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.gmibank.stepDefinitions.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 857000,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "user clicks on New password field",
+            "match": {
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_clicks_on_New_password_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "user provides at least 7 chars as lower case, upper case, digit and special char",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 23
+                }
+              ],
+              "location": "com.gmibank.stepDefinitions.US_3_Create_PasswordSteps.user_provides_at_least_chars_as_lower_case_upper_case_digit_and_special_char(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "user displays strength bar completely green",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "restrict password usage at registration page",
+    "description": "",
+    "id": "restrict-password-usage-at-registration-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_3_Create_Password.feature",
     "tags": []
   }
 ]

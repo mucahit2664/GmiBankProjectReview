@@ -15,6 +15,9 @@ import java.util.function.Function;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class CommonMethods {
+
+    static Random random = new Random();
+
     public static String getScreenshot(String name) throws IOException {
     // naming the screenshot with the current date to avoid duplication
     String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -275,5 +278,97 @@ public class CommonMethods {
             System.out.println("Cannot take screenshot");
         }
         return screenshot;
+    }
+
+    /**
+     * @Burcu
+     * @param passwordLength
+     * @return String
+     */
+    public static String generateRandomPassword(int passwordLength) {
+        String upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String lowerLetters = "abcdefghijklmnopqrstuvwxyz";
+        String numbers = "0123456789";
+        String specialChars = "!@#$%&";
+        StringBuilder password = new StringBuilder(passwordLength);
+        for (int i = 0; i < passwordLength; i++) {
+            if (password.toString().length() < passwordLength) {
+                password.append(upperLetters.charAt(random.nextInt(upperLetters.length())));
+                if (password.toString().length() < passwordLength) {
+                    password.append(lowerLetters.charAt(random.nextInt(lowerLetters.length())));
+                    if (password.toString().length() < passwordLength) {
+                        password.append(numbers.charAt(random.nextInt(numbers.length())));
+                        if (password.toString().length() < passwordLength) {
+                            password.append(specialChars.charAt(random.nextInt(specialChars.length())));
+                        }
+                    }
+                }
+            }
+        }
+        return password.toString();
+    }
+
+    /**
+     *
+     * @return random UpperCase letter String
+     */
+    public static String generateRandomUpperCaseLetterChar() {
+        String upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        StringBuilder charLetter = new StringBuilder();
+        charLetter.append(upperLetters.charAt(random.nextInt(upperLetters.length())));
+        return charLetter.toString();
+    }
+
+    /**
+     *
+     * @return random LowerCase letter char
+     */
+    public static String generateRandomLowerCaseLetterChar() {
+        String lowerLetters = "abcdefghijklmnopqrstuvwxyz";
+        StringBuilder charLetter = new StringBuilder();
+        charLetter.append(lowerLetters.charAt(random.nextInt(lowerLetters.length())));
+        return charLetter.toString();
+    }
+    /**
+     *
+     * @return random number char
+     */
+    public static String generateRandomNumericChar() {
+        String numbers = "0123456789";
+        StringBuilder charNumber = new StringBuilder();
+        charNumber.append(numbers.charAt(random.nextInt(numbers.length())));
+        return charNumber.toString();
+    }
+    /**
+     *
+     * @return random special char
+     */
+    public static String generateRandomSpecialChar() {
+        String specialChars = "!@#$%&";
+        StringBuilder charSpecial = new StringBuilder();
+        charSpecial.append(specialChars.charAt(random.nextInt(specialChars.length())));
+        return charSpecial.toString();
+    }
+
+    // ======= RGB to HEX ==== // from demoQA framework
+
+    public static String getHexColor(WebElement element, String cssValue) {
+        String color = element.getCssValue(cssValue);
+        String hex = "";
+        int r, g, b = 0;
+        if (color.contains("rgba")) {
+            String[] numbers = color.replace("rgba(", "").replace(")", "").split(",");
+            r = Integer.parseInt(numbers[0].trim());
+            g = Integer.parseInt(numbers[1].trim());
+            b = Integer.parseInt(numbers[2].trim());
+            hex = "#" + Integer.toHexString(r) + Integer.toHexString(g) + Integer.toHexString(b);
+        } else {
+            String[] numbers = color.replace("rgb(", "").replace(")", "").split(",");
+            r = Integer.parseInt(numbers[0].trim());
+            g = Integer.parseInt(numbers[1].trim());
+            b = Integer.parseInt(numbers[2].trim());
+            hex = "#" + Integer.toHexString(r) + Integer.toHexString(g) + Integer.toHexString(b);
+        }
+        return hex;
     }
 }

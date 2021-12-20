@@ -43,6 +43,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- testNG library -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
         <dependency>
             <groupId>org.slf4j</groupId>

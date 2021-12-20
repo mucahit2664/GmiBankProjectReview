@@ -6,7 +6,6 @@ Feature:  System should allow any user to register with valid credentials valida
     And click on login module
     And click on register button
 
-
   @US01TC10
   Scenario Outline:  System should allow any user to register with valid credentials validating the success message
     And Enter the SSN "<SSN Number>" with valid credential

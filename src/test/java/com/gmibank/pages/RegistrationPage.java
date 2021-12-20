@@ -53,6 +53,10 @@ public class RegistrationPage {
     @FindBy(xpath = "//div[@style='pointer-events: none;']")
     public WebElement savedMessage;
 
+    public WebElement strengthBarColorRgb(int r, int g, int b) {
+        return Driver.getDriver().findElement(By.xpath("//li[@style='background-color: rgb("+r+", "+g+", "+b+");']"));
+    }
+
     public WebElement getInvalidFeedback(String message) {
         return Driver.getDriver().findElement(By.xpath("//div[text()='"+ message +"']"));
     }
