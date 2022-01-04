@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.1">
-    <testcase classname="register with invalid credentials" name="ssn, mobile number, email fileds should not except invalid data" time="21.075">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="362.205">
+    <testcase classname="Go To Home Page" name="As an Employee User valid login" time="43.619">
         <system-out>
-            <![CDATA[Given Go to gmibank.com home page...........................................passed
-And click on login module...................................................passed
-And click on register button................................................passed
-Given User provides invalid data to corresponding fields "123-000?567", "123 456 788o", "test.com".passed
-And user clicks on register button at Registration page.....................passed
-Then user displays invalid feedback messages................................passed
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When employee enter "employee_username" and "employee_password".............passed
+And click to the sign in button.............................................passed
+Then employee able to sign in...............................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="register with invalid credentials" name="ssn, mobile number, email fileds should not except invalid data 2" time="16.547">
+    <testcase classname="Go To Home Page" name="As an User valid login" time="37.116">
         <system-out>
-            <![CDATA[Given Go to gmibank.com home page...........................................passed
-And click on login module...................................................passed
-And click on register button................................................passed
-Given User provides invalid data to corresponding fields "123-000-56a", "(126)456788", "test@gmail".passed
-And user clicks on register button at Registration page.....................passed
-Then user displays invalid feedback messages................................passed
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter valid "user_username" and "user_password"...................passed
+And click to the sign in button.............................................passed
+Then user able to sign in...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="As an Admin valid login" time="28.597">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When admin enter valid "admin_username" and "admin_password"................passed
+And click to the sign in button.............................................passed
+Then admin able to sign in..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="As an Manager valid login" time="57.783">
+        <failure message="Username is not displayed expected:&lt;Team61 Manage[r]&gt; but was:&lt;Team61 Manage[]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When manager enter valid "manager_username" and "manager_password"..........passed
+And click to the sign in button.............................................passed
+Then Manager able to sign in................................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: Username is not displayed expected:<Team61 Manage[r]> but was:<Team61 Manage[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.gmibank.stepDefinitions.US_4_SignInPageSteps.manager_able_to_sign_in(US_4_SignInPageSteps.java:81)
+	at ✽.Manager able to sign in(file:///C:/Users/BEST%20TECH/IdeaProjects/GmiBankProjectReview/src/test/resources/features/US_4_SignInPage.feature:33)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User is able to cancel login" time="26.998">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter valid "user_username" and "user_password"...................passed
+Then user able to cancel login..............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User is not able to login with invalid credentials" time="36.54">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter invalid "Amelia" and "1710212B.a"...........................passed
+And click to the sign in button.............................................passed
+Then user see "Failed to sign in! Please check your credentials and try again.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User is not able to login with invalid credentials 2" time="20.398">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter invalid "asli" and "Asli12345?".............................passed
+And click to the sign in button.............................................passed
+Then user see "Failed to sign in! Please check your credentials and try again.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User is not able to login with invalid credentials 3" time="24.103">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter invalid "John" and "1111111Jn"..............................passed
+And click to the sign in button.............................................passed
+Then user see "Failed to sign in! Please check your credentials and try again.".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User should be given the option to navigate to registration page if they did not register yet" time="29.655">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When click Register a new account button....................................passed
+Then user navigate to the Registiration Page................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User is not able to sign in without passing username" time="27.196">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter empty "user_username" and valid "user_password".............passed
+And click to the sign in button.............................................passed
+Then user see "Please enter your username." error message...................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Go To Home Page" name="User is not able to sign in without passing password" time="29.308">
+        <system-out>
+            <![CDATA[Given Go to GMIBank home page...............................................passed
+And click to login module and sign in.......................................passed
+When user enter valid "user_username" and empty "user_password".............passed
+And click to the sign in button.............................................passed
+Then user see "Your password is required." password error message...........passed
 ]]>
         </system-out>
     </testcase>

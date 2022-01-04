@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        strict = false,
         plugin = {
                 "html:target/html-reports/cucumber-default-report",
                 "json:target/cucumber.json",
@@ -16,7 +17,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/gmibank/stepDefinitions",
         dryRun = false,
-        tags= "@progress"
+        tags= " @Regression"
 )
 
 

@@ -39,7 +39,7 @@ public class US_02_invalidRegistrationSteps {
 
     @Given("User provides invalid data to corresponding fields {string}, {string}, {string}")
     public void user_provides_invalid_data_to_corresponding_fields(String ssn, String mobilePhoneNumber, String eMail) {
-        CommonMethods.sendText(registrant.ssnTextBox, ssn);
+        CommonMethods.sendText(registrant.ssnTextBox, ssn );
         CommonMethods.sendText(registrant.phoneNumberTextBox, mobilePhoneNumber);
         CommonMethods.sendText(registrant.emailTextBox, eMail);
         CommonMethods.waitFor(3);

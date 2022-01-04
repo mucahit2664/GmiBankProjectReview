@@ -18,6 +18,7 @@ public class CommonPageElements {
     @FindBy(linkText = "Sign in")
     public WebElement homePageSignIn;
 
+
 //-------- Sign in Page Elements --------
 
     @FindBy(xpath = "//input[@id='username']")
@@ -51,5 +52,7 @@ public class CommonPageElements {
     public WebElement passwordInvalidFeedback;
 
 
+    @FindBy(id = "account-menu")
+    public WebElement menuIcon;
 
 }
